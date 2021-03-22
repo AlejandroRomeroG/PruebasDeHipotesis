@@ -9,9 +9,9 @@ PruebaMediasCaso1 <- function(media,desvestpob,n,certeza,valorhipotetico){
   z <- -qnorm(alfachida)
   
   if(abs(zgrande)>=z) {
-    cat("|Z| >= z\n", zgrande, " >= ", z, "\n", "Por lo tanto, podemos rechazar la hipotesis nula")
+    cat("|Z| >= z\n", abs(zgrande), " >= ", z, "\n", "Por lo tanto, podemos rechazar la hipotesis nula")
   } else{
-    cat("z >= |Z|\n", z, " >= ", zgrande, "\n", "Por lo tanto, no podemos rechazar la hipotesis nula")
+    cat("z >= |Z|\n", z, " >= ", abs(zgrande), "\n", "Por lo tanto, no podemos rechazar la hipotesis nula")
   }
 }
 
@@ -52,9 +52,9 @@ PruebaMediasVarianzaPoblacionalDesconocidaCaso1 <- function(media,desvest,n,cert
   t <- -qt(alfachida,n-1)
   
   if(abs(tgrande)>=t) {
-    cat("|T| >= t\n", tgrande, " >= ", t, "\n", "Por lo tanto, podemos rechazar la hipotesis nula")
+    cat("|T| >= t\n", abs(tgrande), " >= ", t, "\n", "Por lo tanto, podemos rechazar la hipotesis nula")
   } else{
-    cat("t >= |T|\n", t, " >= ", tgrande, "\n", "Por lo tanto, no podemos rechazar la hipotesis nula")
+    cat("t >= |T|\n", t, " >= ", abs(tgrande), "\n", "Por lo tanto, no podemos rechazar la hipotesis nula")
   }
 }
 
@@ -97,9 +97,9 @@ PruebaDiferenciaDeMediasCaso1 <- function(media1,media2,desvest1,desvest2,n1,n2,
   z <- -qnorm(alfachida)
   
   if(abs(zgrande)>=z) {
-    cat("|Z| >= z\n", zgrande, " >= ", z, "\n", "Por lo tanto, podemos rechazar la hipotesis nula")
+    cat("|Z| >= z\n", abs(zgrande), " >= ", z, "\n", "Por lo tanto, podemos rechazar la hipotesis nula")
   } else{
-    cat("z >= |Z|\n", z, " >= ", zgrande, "\n", "Por lo tanto, no podemos rechazar la hipotesis nula")
+    cat("z >= |Z|\n", z, " >= ", abs(zgrande), "\n", "Por lo tanto, no podemos rechazar la hipotesis nula")
   }
 }
 
@@ -143,9 +143,9 @@ PruebaDiferenciaDeMediasVarianzasIdenticasCaso1 <- function(media1,media2,desves
   t <- -qt(alfachida,n1+n2-2)
   
   if(abs(tgrande)>=t) {
-    cat("|T| >= t\n", tgrande, " >= ", t,"\n", "Por lo tanto, podemos rechazar la hipotesis nula")
+    cat("|T| >= t\n", abs(tgrande), " >= ", t,"\n", "Por lo tanto, podemos rechazar la hipotesis nula")
   } else {
-    cat("t >= |T|\n", t, " >= ", tgrande,"\n", "Por lo tanto, no podemos rechazar la hipotesis nula")
+    cat("t >= |T|\n", t, " >= ", abs(tgrande),"\n", "Por lo tanto, no podemos rechazar la hipotesis nula")
   }
 }
 
@@ -282,9 +282,9 @@ PruebaProporcionesCaso1 <- function(x,n,valorhipotetico,certeza){
   z <- -qnorm(alfachida)
   
   if(abs(zgrande)>=z) {
-    cat("|Z| >= z\n", zgrande, " >= ", z, "\n", "Por lo tanto, podemos rechazar la hipotesis nula")
+    cat("|Z| >= z\n", abs(zgrande), " >= ", z, "\n", "Por lo tanto, podemos rechazar la hipotesis nula")
   } else{
-    cat("z >= |Z|\n", z, " >= ", zgrande, "\n", "Por lo tanto, no podemos rechazar la hipotesis nula")
+    cat("z >= |Z|\n", z, " >= ", abs(zgrande), "\n", "Por lo tanto, no podemos rechazar la hipotesis nula")
   }
 }
 
